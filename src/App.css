@@ -160,7 +160,7 @@ nav .header-button {
 }
 
 .first-section {
-    margin-top: -4.5rem;
+    /* margin-top: -4.5rem; */
     background-image: url(/images/first-section-bg.png);
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -170,7 +170,7 @@ nav .header-button {
 .home-banner {
     position: relative;
     width: 90%;
-    height: 100vh;
+    height: 85vh;
     background-image: url(/images/banner.png);
     background-position: center;
     background-size: cover;
