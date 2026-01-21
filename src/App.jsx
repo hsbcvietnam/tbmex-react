@@ -274,9 +274,9 @@ export default function App() {
       <main className="main">
         <div className="first-section vertical-container">
           <section id="home" className="home-banner">
-            <div className="title-small align-center">{BANNER[lang].small}</div>
+            {/* <div className="title-small align-center">{BANNER[lang].small}</div>
             <div className="title-big align-center">{BANNER[lang].big}</div>
-            <div className="button">{BANNER[lang].button}</div>
+            <div className="button">{BANNER[lang].button}</div> */}
           </section>
 
           <section id="about" className="about vertical-container">
