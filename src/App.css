@@ -351,244 +351,129 @@ nav .header-button {
     width: 100vw;
 }
 
-.investment {
+.stores {
     position: relative;
-    padding: 5%;
-}
-
-.investment .title {
-    font-size: 2.4rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
-}
-
-.investment *:has(> .investment-item) {
-    border-bottom: 10px solid #ed1c24;
-}
-
-.investment .investment-item {
-    flex: 1;
+    padding: 2rem 5%;
+    background-image: url(/images/store.png);
     background-position: center;
-    background-size: 100%;
     background-repeat: no-repeat;
-    padding-top: 30%;
-    padding-left: 4%;
-    padding-right: 4%;
-    padding-bottom: 4%;
+    background-size: cover;
 }
 
-.investment .investment-item .investment-item-title {
-    color: #FFFFFF;
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.investment .investment-item .investment-item-text {
-    color: #FFFFFF;
-    font-size: 0.8rem;
-}
-
-.global *:has(> .title) {
-    flex: 0 0 auto;
-    margin-right: 4rem;
-}
-
-.global *:has(> .text) {
-    padding: 5%;
-    padding-top: 2.5%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.global .title {
-    font-size: 2.4rem;
-    font-weight: 600;
-    margin-bottom: 0.25rem;
-}
-
-.global .subtitle {
-    font-size: 0.8rem;
-}
-
-.global .subtitle-red {
+.stores > .title {
+    color: #06377b;
     font-size: 1.6rem;
-    font-weight: 600;
-    color: #ed1c24;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    align-self: center;
 }
 
-.global .text {
+.stores *:has(> .item) {
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.stores .item {
     flex: 1;
-    font-size: 1rem;
-    line-height: 2rem;
-    white-space: pre-wrap;
-    padding-right: 2.5%;
+    border-radius: 1rem;
+    background-color: #FFFFFF;
+    padding: 1.5rem;
 }
 
-.global .img {
+.stores .item .image {
+    border-radius: 1rem;
     height: 0;
-    padding-top: 30%;
-    background-image: url(/images/global.jpg);
+    padding-top: 60%;
     background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.excellence {
-    padding-top: 5%;
+.stores .item .title {
+    color: #06377b;
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding-top: 0.5rem;
+    align-self: center;
+    text-align: center;
 }
 
-.excellence .title {
-    font-size: 2.4rem;
+.stores .item .text {
+    color: #06377b;
+    font-size: 0.9rem;
     font-weight: 600;
-    margin-bottom: 3rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-self: center;
+    text-align: center;
 }
 
-.excellence *:has(> .img) {
-    justify-content: space-between;
-    gap: 3rem;
-}
-
-.excellence .img {
-    width: 50%;
-    min-width: 50%;
-    background-image: url(/images/excellence.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.excellence *:has(> .excellence-item) {
-    gap: 1.5rem;
-    padding-top: 5%;
-    padding-bottom: 5%;
+.stores .logistics {
+    position: relative;
+    padding-left: 5%;
     padding-right: 5%;
 }
 
-.excellence .excellence-item .excellence-item-img {
-    width: 3.5rem;
-    height: 3.5rem;
-    background-position: top left;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-bottom: 1rem;
-}
-
-.excellence .excellence-item .excellence-item-title {
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-.excellence .excellence-item .excellence-item-text {
-    font-size: 0.8rem;
-}
-
-.why {
-    padding: 5%;
-}
-
-.why .title {
-    font-size: 2.4rem;
-    font-weight: 600;
-    margin-bottom: 3rem;
-}
-
-.why *:has(> .why-item) {
-    gap: 2rem;
-}
-
-.why .why-item {
-    flex: 1;
-    align-items: center;
-}
-
-.why .why-item .why-item-img {
-    width: 3.5rem;
-    height: 3.5rem;
-    background-position: center center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-bottom: 1rem;
-}
-
-.why .why-item .why-item-title {
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-.why .why-item .why-item-text {
-    font-size: 0.8rem;
-}
-
-.contact {
-    padding: 5%;
-    height: 70vh;
-    background-image: url(/images/contact.png);
+.stores .logistics .image {
+    width: 75%;
+    height: 0;
+    padding-top: 35%;
+    border-radius: 0 4rem 0 4rem;
+    background-image: url(/images/logistics.png);
     background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
-    justify-content: space-between;
+    background-size: cover;
+}
+
+.stores .logistics .vertical-container {
+    position: absolute;
+    background-color: #06377b;
+    padding: 1.5rem;
+    border-radius: 0 3rem 0 3rem;
+    width: 35%;
+    right: 5%;
+    bottom: 10%;
     align-items: center;
 }
 
-.contact .title {
-    font-size: 2.4rem;
-    font-weight: 600;
+.stores .logistics .vertical-container .title {
     color: #FFFFFF;
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding-bottom: 0.5rem;
+    text-align: center;
 }
 
-.contact *:has(> .contact-item) {
-    width: 50%;
-    gap: 0.75rem;
-}
-
-.contact .contact-item {
-    gap: 0.5rem;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.contact .contact-item .logo-1, .contact .contact-item .logo-2, .contact .contact-item .logo-3 {
-    width: 1rem;
-    height: 1rem;
-    background-position: left center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.contact .contact-item .logo-1 {
-    background-image: url(/images/contact-1.png);
-}
-
-.contact .contact-item .logo-2 {
-    background-image: url(/images/contact-2.png);
-}
-
-.contact .contact-item .logo-3 {
-    background-image: url(/images/contact-3.png);
-}
-
-.contact .contact-item .contact-item-text {
-    font-size: 0.8rem;
+.stores .logistics .vertical-container .text {
     color: #FFFFFF;
-    text-decoration: none;
-}
-
-.contact .contact-item a.contact-item-text:hover {
-    text-decoration: underline;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
 }
 
 .footer {
-    padding: 5%;
-    height: 30vh;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ed1c24;
+    padding: 2rem 5%;
+    height: 50vh;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-image: url(/images/footer-bg.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 2rem;
+}
+
+.footer *:has(> .logo) {
+    gap: 1rem;
+    flex-shrink: 0;
 }
 
 .footer .logo {
-    width: 9rem;
     height: 3rem;
     background-image: url(/images/footer.png);
     background-position: left center;
@@ -596,18 +481,85 @@ nav .header-button {
     background-repeat: no-repeat;
 }
 
-.footer *:has(> .footer-item) {
+.footer *:has(> .icon) {
+    gap: 0.5rem;
+}
+
+.footer .icon {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.footer .icon:first-child {
+    margin-right: 0.25rem;
+}
+
+.footer *:has(> .logo) .text {
+    width: max-content;
+    font-size: 0.8rem;
+    color: #FFFFFF;
+}
+
+.footer > * > .title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding-bottom: 0.5rem;
+}
+
+.footer > *:nth-child(2) > .horizontal-container {
     gap: 2rem;
 }
 
-.footer .footer-item, .footer .text {
-    font-size: 0.8rem;
-    color: #FFFFFF;
-    text-decoration: none;
+.footer > *:nth-child(2) > .horizontal-container > * {
+    flex: 1 1 0;
 }
 
-.footer .footer-item:hover {
-    text-decoration: underline;
+.footer > *:nth-child(2) .subtitle {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding-top: 0.5rem;
+}
+
+.footer > *:nth-child(2) .text {
+    font-size: 0.8rem;
+    color: #FFFFFF;
+}
+
+.footer *:has(> .link-item) {
+    gap: 0.25rem;
+}
+
+.footer .link-item {
+    gap: 0.5rem;
+    /* align-items: stretch; */
+}
+
+.footer .link-item > .image {
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -0.35rem;
+}
+
+.footer .link-item:first-child > .image {
+    margin-top: -0.25rem;
+}
+
+.footer .link-item .link-text, .footer .menu-item {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #FFFFFF;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 480px) {
