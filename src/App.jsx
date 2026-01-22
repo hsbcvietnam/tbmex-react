@@ -140,6 +140,11 @@ const STORE = {
   },
 }
 
+const CTA = {
+  ES: "Contáctanos",
+  EN: "Contáctanos",
+}
+
 const FOOTER = {
   ES: {
     externalLinks: [
@@ -335,7 +340,13 @@ export default function App() {
           </div>
         </section>
 
-        <img className="temp" src="/images/temp.png" alt="" srcset="" />
+        {/* <img className="temp" src="/images/temp.png" alt="" srcset="" /> */}
+        <div className="temp-text">En TBMEX, nos esforzamos por ofrecerle una amplia gama de productos de alta calidad, obtenidos de manera confiable de nuestros socios de confianza!</div>
+
+        <div className="cta horizontal-container">
+          <div className="image"></div>
+          <div className="text">{CTA[lang]}</div>
+        </div>
       </main>
 
       <footer className="footer horizontal-container">
