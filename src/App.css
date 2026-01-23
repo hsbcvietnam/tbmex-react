@@ -455,10 +455,10 @@ nav .header-button {
 }
 
 .temp-text {
-    padding: 2rem 5%;
-    background-color: #06377b;
-    color: #FFFFFF;
-    font-size: 0.8rem;
+    padding: 2rem 10%;
+    background-color: #FFFFFF;
+    color: #06377b;
+    font-size: 1.6rem;
     text-align: center;
     font-weight: 700;
 }
@@ -775,6 +775,12 @@ nav .header-button {
         background-color: unset;
         border-radius: unset;
         padding: 0.5rem 0 0 0;
+    }
+
+    .temp-text {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 1.2rem;
     }
 
     .global {
