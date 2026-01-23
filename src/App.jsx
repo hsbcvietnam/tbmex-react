@@ -240,7 +240,7 @@ export default function App() {
   return (
     <>
       <header className="header vertical-container">
-        <div className="header-text">{NAVTEXT[lang]}</div>
+        {/* <div className="header-text">{NAVTEXT[lang]}</div> */}
         <div className="real-header horizontal-container">
           <a href="#home" className="header-logo"></a>
           {
