@@ -289,7 +289,7 @@ export default function App() {
 
         <section id="operation" className="operation vertical-container">
           <div className="title">{OPERATION[lang].title}</div>
-          <div className="horizontal-container">
+          <div className="horizontal-container vertical-mobile">
             {
               OPERATION[lang].items.map((i,k) => (
                 <div key={k} className="item horizontal-container">
@@ -320,7 +320,7 @@ export default function App() {
 
         <section id="stores" className="stores vertical-container">
           <div className="title">{STORE[lang].title}</div>
-          <div className="horizontal-container">
+          <div className="horizontal-container vertical-mobile">
             {
               STORE[lang].stores.map((i,k) => (
                 <div key={k} className="item vertical-container">
@@ -331,7 +331,7 @@ export default function App() {
               ))
             }
           </div>
-          <div className="logistics">
+          <div className="logistics vertical-mobile">
             <div className="image"></div>
             <div className="vertical-container">
               <div className="title">{STORE[lang].logistics.title}</div>

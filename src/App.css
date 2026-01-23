@@ -208,13 +208,11 @@ nav .header-button {
 }
 
 .vertical-container {
-    /* position: relative; */
     display: flex;
     flex-direction: column;
 }
 
 .horizontal-container {
-    /* position: relative; */
     display: flex;
     flex-direction: row;
 }
@@ -601,17 +599,32 @@ nav .header-button {
 }
 
 @media screen and (max-width: 480px) {
+    .vertical-mobile {
+        flex-direction: column;
+    }
+
     header {
         position: fixed;
-        height: 10vh;
-        padding: 1vh 0;
+        height: 13vh;
+        padding: 0;
+        flex-wrap: wrap;
+    }
+
+    header .header-text {
+        height: 5vh;
+    }
+
+    header .real-header {
+        height: 8vh;
+        padding-left: 0;
+        padding-right: 0;
         flex-wrap: wrap;
     }
 
     header nav {
-        margin-top: 1vh;
+        /* margin-top: 1vh; */
         width: 100%;
-        height: 90vh;
+        height: 87vh;
         background-color: #FFFFFF;
         flex-direction: column;
         justify-content: center;
@@ -650,12 +663,12 @@ nav .header-button {
     }
 
     header .header-logo {
-        margin-left: 5%;
+        margin-left: 1rem;
         width: 30%;
     }
 
     header .close-button {
-        margin-right: 5%;
+        margin-right: 1rem;
         width: 4vh;
         height: 4vh;
         background-position: center;
@@ -665,190 +678,103 @@ nav .header-button {
 
     .home-banner {
         width: 100vw;
-        height: 100vh;
-        margin-top: 0;
-        padding: 0 5%;
-    }
-
-    .home-banner .title-small {
-        font-size: 0.8rem;
-    }
-
-    .home-banner .title-big {
-        font-size: 1.6rem;
-        white-space: unset;
-    }
-
-    .home-banner .button {
-        width: fit-content;
-        font-size: 0.8rem;
-        text-align: center;
+        height: 50vw;
+        margin-top: 13vh;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .about {
-        padding: 10vh 0 10% 0;
+        padding: 2rem 1rem;
     }
 
-    .about .first-section {
-        align-items: center;
+    .about .title {
+        font-size: 1.2rem;
     }
 
-    .about .first-section > * {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    }
-
-    .about .first-section .title {
-        font-size: 1.6rem;
-        font-weight: 600;
-        text-align: center;
-        margin-bottom: 0.5rem;
-    }
-
-    .about .first-section .text-1, .about .first-section .text-2, .about .first-section .text-3 {
-        max-width: 80%;
-        text-align: center;
-    }
-
-    .about .first-section .text-1, .about .first-section .text-3 {
-        margin-bottom: 10%;
-    }
-
-    .about .first-section .text-2 {
-        margin-bottom: 0.5rem;
-    }
-
-    .about .first-section .img-1, .about .first-section .img-2 {
-        width: 100%;
-        height: 0;
-        padding-top: 90%;
-        max-width: unset;
-    }
-
-    .about .first-section .img-1 {
-        margin-bottom: 0.5rem;
-    }
-
-    .about .first-section .img-2 {
-        margin-bottom: 1rem;
-    }
-
-    .about .second-section *:has(> .box) {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    .about .second-section .box {
-        height: 90vw;
-        flex: unset;
-        padding: 5%;
-    }
-
-    .about .second-section .box > * {
-        text-align: center;
-    }
-
-    .about .second-section .values {
-        padding: 15% 0;
-    }
-
-    .about .values *:has(> .value-item) {
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
-    .about .values .value-item {
-        flex: 1 1 calc(50% - 20px);
+    .about .text {
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .operation {
         flex-direction: column;
-        padding: 5% 5% 10% 5%;
+        padding: 2rem 1rem;
     }
 
-    .operation *:has(> .title) {
-        width: 100%;
-        align-items: center;
-        margin-bottom: 1rem;
-    }
-
-    .operation .title {
-        font-size: 1.6rem;
-        font-weight: 600;
-        text-align: center;
-        margin-bottom: 0.5rem;
-    }
-
-    .operation .text {
-        width: 90%;
-        font-size: 0.8rem;
+    .operation > .title {
+        font-size: 1.2rem;
         text-align: center;
     }
 
-    .operation .img {
-        width: 100%;
-        padding-top: 100%;
+    .operation .item {
+        gap: 1rem;
     }
 
-    .services {
-        padding: 10vh 5% 10% 5%;
+    .products {
+        padding: 2rem 1rem;
     }
 
-    .services .title {
-        font-size: 1.6rem;
-        font-weight: 600;
+    .products > .title {
+        font-size: 1.2rem;
         text-align: center;
-        margin-bottom: 0.5rem;
     }
 
-    .services *:has(> .service-item) {
-        flex-direction: row;
-        gap: 1rem;                 /* space between cards */
-        overflow-x: auto;          /* enables horizontal scroll */
-        padding-bottom: 10px;      /* small spacing under scrollbar */
-        scroll-snap-type: x mandatory; /* optional: smooth snapping */
-        flex-wrap: nowrap;
-    }
-
-    .services .service-item {
-        flex: 0 0 80vw;           /* fixed width per card */
-        scroll-snap-align: start;  /* optional: snap each card */
-        /* background: white;
-        border-radius: 12px; */
-        overflow: hidden;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .investment {
-        padding: 10% 0;
-    }
-
-    .investment .title {
-        font-size: 1.6rem;
-        font-weight: 600;
-        text-align: center;
-        margin-bottom: 0.5rem;
-        white-space: pre-wrap;
-    }
-
-    .investment *:has(> .investment-item) {
+    .products .grid {
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
         flex-direction: column;
-        border-left: 10px solid #ed1c24;
-        border-bottom: none;
+        gap: 1rem;
     }
 
-    .investment .investment-item {
-        padding: 40% 5% 5% 5%;
+    .stores {
+        padding: 2rem 1rem;
+    }
+    
+    .stores > .title {
+        font-size: 1.2rem;
+        text-align: center;
     }
 
-    .investment .investment-item .investment-item-title, .investment .investment-item .investment-item-text {
+    .stores *:has(> .item) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .stores .item {
+        padding: 1rem
+    }
+
+    .stores .item .title {
+        font-size: 1rem;
+    }
+
+    .stores .item .text {
         font-size: 0.8rem;
-        text-align: left;
     }
 
-    .investment .investment-item .investment-item-title {
-        font-weight: 700;
-        margin-bottom: 0.5rem;
+    .stores .logistics {
+        background-color: #06377b;
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+
+    .stores .logistics .image {
+        width: 100%;
+        padding-top: 60%;
+        border-radius: 1rem;
+    }
+
+    .stores .logistics .vertical-container {
+        position: relative;
+        right: unset;
+        bottom: unset;
+        width: unset;
+        background-color: unset;
+        border-radius: unset;
+        padding: 0.5rem 0 0 0;
     }
 
     .global {
