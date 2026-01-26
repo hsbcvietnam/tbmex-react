@@ -22,15 +22,15 @@ const NAVTEXT = {
 
 const NAV = {
   ES: [
-    { label: "Incio", href: "#home" },
-    { label: "Introducción", href: "#about" },
+    { label: "Inicio", href: "#home" },
+    { label: "Sobre nosotros", href: "#about" },
     { label: "Productos", href: "#why-us" },
     { label: "Proveedores", href: "#services" },
     { label: "Contactos", href: "#contact" },
   ],
   EN: [
-    { label: "Incio", href: "#home" },
-    { label: "Introducción", href: "#about" },
+    { label: "Inicio", href: "#home" },
+    { label: "Sobre nosotros", href: "#about" },
     { label: "Productos", href: "#why-us" },
     { label: "Proveedores", href: "#services" },
     { label: "Contactos", href: "#contact" },
@@ -153,14 +153,14 @@ const FOOTER = {
     text: "© 2025. All Rights Reserved.",
     contact: {
       title: "Contáctenos",
-      text1: "Avenida 51 S/N esquina a 26, Plaza de la Revolución, La Habana, Cuba",
+      text1: "Avenida 51 S/N esquina 26, Plaza de la Revolución, La Habana, Cuba",
       subtitle: "Almacén",
       text2: "Nave No.5, Calle 296 y Avenida 7ma. Santa Fe, Playa, La Habana, Cuba",
     },
     contactLinks: [
       {
         pre: "tel:",
-        links: ["(+53) 63402841", "(+53) 63402817", "(+53) 63402812",],
+        links: ["(+53) 54655434", "(+53) 54655197",],
       },
       {
         pre: "mailto:",
@@ -174,10 +174,10 @@ const FOOTER = {
     menu: {
       title: "Sobre TBMEX",
       items: [
-        { name: "Carreras", link: "", },
+        { name: "Proveedores", link: "", },
         { name: "Noticias y Blog", link: "", },
-        { name: "Sostenibilidad y Gobernanza", link: "", },
-        { name: "Centro de Prensa", link: "", },
+        { name: "Productos", link: "", },
+        { name: "Sobre nosotros", link: "", },
         { name: "Anúnciate con Nosotros", link: "", },
         { name: "Afiliados y Socios", link: "", },
         { name: "Proveedores", link: "", },
@@ -191,14 +191,14 @@ const FOOTER = {
     text: "© 2025. All Rights Reserved.",
     contact: {
       title: "Contáctenos",
-      text1: "Avenida 51 S/N esquina a 26, Plaza de la Revolución, La Habana, Cuba",
+      text1: "Avenida 51 S/N esquina 26, Plaza de la Revolución, La Habana, Cuba",
       subtitle: "Almacén",
       text2: "Nave No.5, Calle 296 y Avenida 7ma. Santa Fe, Playa, La Habana, Cuba",
     },
     contactLinks: [
       {
         pre: "tel:",
-        links: ["(+53) 63402841", "(+53) 63402817", "(+53) 63402812",],
+        links: ["(+53) 54655434", "(+53) 54655197",],
       },
       {
         pre: "mailto:",
@@ -212,10 +212,10 @@ const FOOTER = {
     menu: {
       title: "Sobre TBMEX",
       items: [
-        { name: "Carreras", link: "", },
+        { name: "Proveedores", link: "", },
         { name: "Noticias y Blog", link: "", },
-        { name: "Sostenibilidad y Gobernanza", link: "", },
-        { name: "Centro de Prensa", link: "", },
+        { name: "Productos", link: "", },
+        { name: "Sobre nosotros", link: "", },
         { name: "Anúnciate con Nosotros", link: "", },
         { name: "Afiliados y Socios", link: "", },
         { name: "Proveedores", link: "", },
