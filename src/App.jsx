@@ -341,7 +341,7 @@ export default function App() {
         </section>
 
         {/* <img className="temp" src="/images/temp.png" alt="" srcset="" /> */}
-        <div className="temp-text">En TBMEX, nos esforzamos por ofrecerle una amplia gama de productos de alta calidad, obtenidos de manera confiable de nuestros socios de confianza!</div>
+        <div className="temp-text">En TBMEX, nos esforzamos por ofrecerle una amplia gama de productos de alta calidad, obtenidos de manera confiable de nuestros socios de confianza.</div>
 
         <div className="cta horizontal-container">
           <div className="image"></div>
