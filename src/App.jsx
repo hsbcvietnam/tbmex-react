@@ -215,11 +215,6 @@ import "./App.css";
 export default function App() {
   const [lang, setLang] = useState("ES")
   const [menu, setMenu] = useState(false)
-  useEffect(() => {
-    setChargesMenu(false)
-    setTermsMenu(false)
-  }, [menu])
-  
 
   return (
     <>
