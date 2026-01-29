@@ -17,38 +17,25 @@ import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detec
 
 const NAVTEXT = {
   ES: "20% de reembolso para todos los usuarios | Código: NEWMEMBER",
-  EN: "20% de reembolso para todos los usuarios | Código: NEWMEMBER",
+  EN: "20% cashback for all users | Code: NEWMEMBER",
 }
 
 const NAV = {
   ES: [
     { label: "Inicio", href: "#home" },
     { label: "Sobre nosotros", href: "#about" },
-    { label: "Productos", href: "#why-us" },
-    { label: "Proveedores", href: "#services" },
+    { label: "Productos", href: "#products" },
+    { label: "Proveedores", href: "#stores" },
     { label: "Contactos", href: "#contact" },
   ],
   EN: [
-    { label: "Inicio", href: "#home" },
-    { label: "Sobre nosotros", href: "#about" },
-    { label: "Productos", href: "#why-us" },
-    { label: "Proveedores", href: "#services" },
-    { label: "Contactos", href: "#contact" },
+    { label: "Home", href: "#home" },
+    { label: "About us", href: "#about" },
+    { label: "Products", href: "#products" },
+    { label: "Stores", href: "#stores" },
+    { label: "Contact us", href: "#contact" },
   ],
 };
-
-const BANNER = {
-  ES: {
-    small: "WE ARE LOGCHAIN EXPRESS",
-    big: "YOUR LOGISTICS, OUR COMMITMENT",
-    button: "Get Started",
-  },
-  EN: {
-    small: "CHÚNG TÔI LÀ LOGCHAIN EXPRESS",
-    big: "TỐI ƯU LOGISTICS CHO BẠN -\nCAM KẾT CỦA CHÚNG TÔI",
-    button: "Bắt đầu hành trình tối ưu vận chuyển",
-  },
-}
 
 const ABOUT = {
   ES: {
@@ -58,10 +45,10 @@ const ABOUT = {
     text2: "Desde nuestras tiendas físicas hasta nuestra plataforma digital, ponemos a su alcance una amplia variedad de productos, con promociones exclusivas y beneficios que premian su fidelidad. Somos un puente que acerca soluciones prácticas y accesibles, para su negocio y las familias cubanas.",
   },
   EN: {
-    title1: "¿Quiénes",
-    title2: "somos?",
-    text1: "TBMEX S.A. es una empresa mixta miembro de Thai Binh Corporation dedicada a la comercialización minorista, mayorista y el comercio electrónico. Nuestro compromiso es ofrecer productos de calidad, precios asequibles y un servicio confiable en cada rincón del país.",
-    text2: "Desde nuestras tiendas físicas hasta nuestra plataforma digital, ponemos a su alcance una amplia variedad de productos, con promociones exclusivas y beneficios que premian su fidelidad. Somos un puente que acerca soluciones prácticas y accesibles, para su negocio y las familias cubanas.",
+    title1: "Who",
+    title2: "are we?",
+    text1: "TBMEX S.A. is a joint venture and member of Thai Binh Corporation, specializing in retail, wholesale, and e-commerce. Our commitment is to offer quality products, affordable prices, and reliable service throughout the country.",
+    text2: "From our physical stores to our digital platform, we offer a wide variety of products, with exclusive promotions and benefits that reward your loyalty. We are a bridge that brings practical and accessible solutions to your business and Cuban families.",
   },
 }
 
@@ -84,19 +71,19 @@ const OPERATION = {
     ],
   },
   EN: {
-    title: "¿POR QUÉ ELEGIR TBMEX?",
+    title: "WHY CHOOSE TBMEX?",
     items: [
       {
-        title: "Calidad Garantizada",
-        text: "Productos esenciales y de calidad",
+        title: "Quality Guaranteed",
+        text: "Essential and quality products",
       },
       {
-        title: "Precios Asequibles",
-        text: "Transparencia en precios para una compra segura",
+        title: "Affordable Prices",
+        text: "Price transparency for a secure purchase",
       },
       {
-        title: "Disponibles en Cuba",
-        text: "Disponibles en Cuba, con cobertura real y constante",
+        title: "Available in Cuba",
+        text: "Available in Cuba, with real and constant coverage",
       },
     ],
   },
@@ -110,9 +97,9 @@ const PRODUCTS = {
     ]
   },
   EN: {
-    title: "Productos",
+    title: "Products",
     items: [
-      "Alimentos", "Aseo e higiene", "Útiles del hogar y ajuares", "Electrónica", "Energía renovable", "Ferretería",
+      "Food", "Personal Care and Hygiene", "Household Goods and Furnishings", "Electronics", "Renewable Energy", "Hardware Store",
     ]
   },
 }
@@ -129,20 +116,25 @@ const STORE = {
     }
   },
   EN: {
-    title: "Nuestras tiendas",
+    title: "Our stores",
     stores: [
-      { title: "Tienda TBMEX Puentes Grandes", text: "Avenida 51 S/N esquina 26, Plaza de la Revolución, La Habana, Cuba." },
-      { title: "Tienda TBMEX Santa Fe", text: "Nave No. 5, Calle 296 y Avenida 7ma. Santa Fe, Playa, La Habana, Cuba." },
+      { title: "TBMEX Puentes Grandes Store", text: "Avenue 51 S/N corner 26, Plaza de la Revolución, La Habana, Cuba." },
+      { title: "TBMEX Santa Fe Store", text: "Warehouse No. 5, 296th Street and 7th Avenue. Santa Fe, Playa, La Habana, Cuba." },
     ],
     logistics: {
-      title: "Logística y Transporte", text: "Servicio de transporte y distribución para pedidos mayoristas y reabastecimiento."
+      title: "Logistics and Transportation", text: "Transportation and distribution service for wholesale orders and restocking."
     }
   },
 }
 
+const TEMP = {
+  ES: "En TBMEX, nos esforzamos por ofrecerle una amplia gama de productos de alta calidad, obtenidos de manera confiable de nuestros socios de confianza.",
+  EN: "At TBMEX, we strive to offer you a wide range of high-quality products, reliably sourced from our trusted partners.",
+}
+
 const CTA = {
-  ES: "Contáctanos",
-  EN: "Contáctanos",
+  ES: "Entra al grupo",
+  EN: "Join our group",
 }
 
 const FOOTER = {
@@ -178,9 +170,6 @@ const FOOTER = {
         { name: "Noticias y Blog", link: "", },
         { name: "Productos", link: "", },
         { name: "Sobre nosotros", link: "", },
-        { name: "Anúnciate con Nosotros", link: "", },
-        { name: "Afiliados y Socios", link: "", },
-        { name: "Proveedores", link: "", },
       ],
     },
   },
@@ -190,10 +179,10 @@ const FOOTER = {
     ],
     text: "© 2025. All Rights Reserved.",
     contact: {
-      title: "Contáctenos",
-      text1: "Avenida 51 S/N esquina 26, Plaza de la Revolución, La Habana, Cuba",
-      subtitle: "Almacén",
-      text2: "Nave No.5, Calle 296 y Avenida 7ma. Santa Fe, Playa, La Habana, Cuba",
+      title: "Contact us",
+      text1: "Avenue 51 S/N corner 26, Plaza de la Revolución, La Habana, Cuba",
+      subtitle: "Store",
+      text2: "Warehouse No. 5, 296th Street and 7th Avenue. Santa Fe, Playa, La Habana, Cuba",
     },
     contactLinks: [
       {
@@ -210,15 +199,12 @@ const FOOTER = {
       },
     ],
     menu: {
-      title: "Sobre TBMEX",
+      title: "About TBMEX",
       items: [
-        { name: "Proveedores", link: "", },
-        { name: "Noticias y Blog", link: "", },
-        { name: "Productos", link: "", },
-        { name: "Sobre nosotros", link: "", },
-        { name: "Anúnciate con Nosotros", link: "", },
-        { name: "Afiliados y Socios", link: "", },
-        { name: "Proveedores", link: "", },
+        { name: "Stores", link: "", },
+        { name: "News and Blog", link: "", },
+        { name: "Products", link: "", },
+        { name: "About us", link: "", },
       ],
     },
   },
@@ -229,8 +215,6 @@ import "./App.css";
 export default function App() {
   const [lang, setLang] = useState("ES")
   const [menu, setMenu] = useState(false)
-  const [chargesMenu, setChargesMenu] = useState(false)
-  const [termsMenu, setTermsMenu] = useState(false)
   useEffect(() => {
     setChargesMenu(false)
     setTermsMenu(false)
@@ -341,7 +325,7 @@ export default function App() {
         </section>
 
         {/* <img className="temp" src="/images/temp.png" alt="" srcset="" /> */}
-        <div className="temp-text">En TBMEX, nos esforzamos por ofrecerle una amplia gama de productos de alta calidad, obtenidos de manera confiable de nuestros socios de confianza.</div>
+        <div className="temp-text">{TEMP[lang]}</div>
 
         <div className="cta horizontal-container">
           <div className="image"></div>
@@ -349,7 +333,7 @@ export default function App() {
         </div>
       </main>
 
-      <footer className="footer horizontal-container">
+      <footer id="contact" className="footer horizontal-container">
         <div className="vertical-container">
           <div className="logo"></div>
           <div className="horizontal-container">
