@@ -140,7 +140,7 @@ const CTA = {
 const FOOTER = {
   ES: {
     externalLinks: [
-      "whatsapp", "instagram", "facebook"
+      "https://chat.whatsapp.com/GsjZwKcNslQLGVfvUjGpHM", "https://www.instagram.com/tbmex.sa?igsh=azJjeWZ3bHF1MHRy", "https://www.facebook.com/profile.php?id=61585909214895"
     ],
     text: "© 2025. All Rights Reserved.",
     contact: {
@@ -175,7 +175,7 @@ const FOOTER = {
   },
   EN: {
     externalLinks: [
-      "whatsapp", "instagram", "facebook"
+      "https://chat.whatsapp.com/GsjZwKcNslQLGVfvUjGpHM", "https://www.instagram.com/tbmex.sa?igsh=azJjeWZ3bHF1MHRy", "https://www.facebook.com/profile.php?id=61585909214895"
     ],
     text: "© 2025. All Rights Reserved.",
     contact: {
@@ -249,11 +249,12 @@ export default function App() {
 
       <main className="main">
         <div className="first-section vertical-container">
-          <section id="home" className="home-banner">
+          <section id="home" className="home-banner" style={{display: (lang === 'ES') ? (null) : ("none")}}>
             {/* <div className="title-small align-center">{BANNER[lang].small}</div>
             <div className="title-big align-center">{BANNER[lang].big}</div>
             <div className="button">{BANNER[lang].button}</div> */}
           </section>
+          <section className="home-banner home-banner-en" style={{display: (lang === 'EN') ? (null) : ("none")}}></section>
 
           <section id="about" className="about vertical-container">
             <div className="horizontal-container">
@@ -322,7 +323,10 @@ export default function App() {
         {/* <img className="temp" src="/images/temp.png" alt="" srcset="" /> */}
         <div className="temp-text">{TEMP[lang]}</div>
 
-        <div className="cta horizontal-container">
+        <div 
+          className="cta horizontal-container"
+          onClick={() => window.open("https://chat.whatsapp.com/GsjZwKcNslQLGVfvUjGpHM", "_blank")}
+        >
           <div className="image"></div>
           <div className="text">{CTA[lang]}</div>
         </div>

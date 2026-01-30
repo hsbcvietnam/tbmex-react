@@ -184,6 +184,10 @@ nav .header-button {
     margin-right: 5%;
 }
 
+.home-banner-en {
+    background-image: url(/images/banner-en.png);
+}
+
 .home-banner .title-small {
     color: #FFFFFF;
     font-size: 1.2rem;
@@ -684,6 +688,10 @@ nav .header-button {
         margin-left: 0;
         margin-right: 0;
         background-image: url(/images/banner-mobile.png);
+    }
+
+    .home-banner-en {
+        background-image: url(/images/banner-mobile-en.png);
     }
 
     .about {
