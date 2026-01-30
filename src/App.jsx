@@ -142,7 +142,7 @@ const FOOTER = {
     externalLinks: [
       "https://chat.whatsapp.com/GsjZwKcNslQLGVfvUjGpHM", "https://www.instagram.com/tbmex.sa?igsh=azJjeWZ3bHF1MHRy", "https://www.facebook.com/profile.php?id=61585909214895"
     ],
-    text: "© 2025. All Rights Reserved.",
+    text: "© 2026. All Rights Reserved.",
     contact: {
       title: "Contáctenos",
       text1: "Avenida 51 S/N esquina 26, Plaza de la Revolución, La Habana, Cuba",
@@ -177,7 +177,7 @@ const FOOTER = {
     externalLinks: [
       "https://chat.whatsapp.com/GsjZwKcNslQLGVfvUjGpHM", "https://www.instagram.com/tbmex.sa?igsh=azJjeWZ3bHF1MHRy", "https://www.facebook.com/profile.php?id=61585909214895"
     ],
-    text: "© 2025. All Rights Reserved.",
+    text: "© 2026. All Rights Reserved.",
     contact: {
       title: "Contact us",
       text1: "Avenue 51 S/N corner 26, Plaza de la Revolución, La Habana, Cuba",
