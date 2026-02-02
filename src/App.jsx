@@ -166,7 +166,7 @@ const FOOTER = {
     menu: {
       title: "Sobre TBMEX",
       items: [
-        { name: "Proveedores", link: "", },
+        { name: "Tiendas", link: "", },
         { name: "Noticias y Blog", link: "", },
         { name: "Productos", link: "", },
         { name: "Sobre nosotros", link: "", },
