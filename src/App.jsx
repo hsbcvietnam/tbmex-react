@@ -140,7 +140,7 @@ const CTA = {
 const FOOTER = {
   ES: {
     externalLinks: [
-      "https://chat.whatsapp.com/GsjZwKcNslQLGVfvUjGpHM", "https://www.instagram.com/tbmex.sa?igsh=azJjeWZ3bHF1MHRy", "https://www.facebook.com/profile.php?id=61585909214895"
+      "https://chat.whatsapp.com/EtjrZquRqRCBgZKEi8yApR?mode=gi_t", "https://www.instagram.com/tbmex.sa?igsh=azJjeWZ3bHF1MHRy", "https://www.facebook.com/profile.php?id=61585909214895"
     ],
     text: "© 2026. All Rights Reserved.",
     contact: {
@@ -175,7 +175,7 @@ const FOOTER = {
   },
   EN: {
     externalLinks: [
-      "https://chat.whatsapp.com/GsjZwKcNslQLGVfvUjGpHM", "https://www.instagram.com/tbmex.sa?igsh=azJjeWZ3bHF1MHRy", "https://www.facebook.com/profile.php?id=61585909214895"
+      "https://chat.whatsapp.com/EtjrZquRqRCBgZKEi8yApR?mode=gi_t", "https://www.instagram.com/tbmex.sa?igsh=azJjeWZ3bHF1MHRy", "https://www.facebook.com/profile.php?id=61585909214895"
     ],
     text: "© 2026. All Rights Reserved.",
     contact: {
@@ -325,7 +325,7 @@ export default function App() {
 
         <div 
           className="cta horizontal-container"
-          onClick={() => window.open("https://chat.whatsapp.com/GsjZwKcNslQLGVfvUjGpHM", "_blank")}
+          onClick={() => window.open("https://chat.whatsapp.com/EtjrZquRqRCBgZKEi8yApR?mode=gi_t", "_blank")}
         >
           <div className="image"></div>
           <div className="text">{CTA[lang]}</div>
